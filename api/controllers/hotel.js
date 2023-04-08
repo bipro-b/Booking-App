@@ -1,4 +1,4 @@
-const Hotel = require("../models/hotel")
+const Hotel = require("../models/Hotel")
 exports.createHotel = async(req,res,next)=>{
     try {
         const newHotel = await Hotel.create(req.body);
